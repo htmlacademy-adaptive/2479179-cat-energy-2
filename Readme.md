@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Alina Valendo](https://up.htmlacademy.ru/adaptive-individual/2/user/2479179).
-* Наставник: [Андрей Изосимов] https://htmlacademy.ru/profile/id605037.
+* Наставник: [Андрей Изосимов](https://htmlacademy.ru/profile/id605037).
 
 ---
 
