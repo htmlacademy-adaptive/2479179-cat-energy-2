@@ -1,0 +1,26 @@
+.program-selection {
+  font-family: $Oswald;
+  color: #ffffff;
+  background-color: $bg-base-color;
+}
+
+.program-selection__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.program-selection__subtitle {
+  line-height: 14px;
+  font-style: 14px;
+}
+
+.program-selection__button {
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $bg-base-color;
+}

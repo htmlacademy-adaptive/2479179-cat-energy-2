@@ -1,0 +1,30 @@
+.program-results {
+  background-color: #eaeaea;
+}
+
+.program-results__title {
+  font-family: $Oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000000;
+}
+
+.program-results__list-item {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.program-results__item-number {
+  font-family: $Oswald;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.program-results__expenses {
+  font-family: $Oswald;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000;
+}
