@@ -12,10 +12,31 @@
 }
 
 .program-description__link {
+  display: flex;
   font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.program-description__link::after {
+  content: "";
+  width: 24px;
+  height: 12px;
+  background-color: #000000;
+  mask-image: url("../../icons/stack.svg#program-arrow");
+  mask-position: 100%;
+  mask-size: 24px 12px;
+  mask-repeat: no-repeat;
+}
+
+
+.program-description__item:first-child {
+  background-image: url("../../icons/stack.svg#program-cat");
+}
+
+.program-description__item {
+  background-image: url("../../icons/stack.svg#program-tiger");
 }

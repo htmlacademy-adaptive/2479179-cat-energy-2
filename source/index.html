@@ -19,21 +19,16 @@
     <div class="page-header__logo">
       <a class="page-header__logo-link" href="#">
         <picture>
-          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logos/logo-picture-desktop.svg">
-          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logos/logo-picture-tablet.svg">
-          <img class="page-header__logo-picture" src="./images/logos/logo-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-picture-desktop.svg">
+          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-picture-tablet.svg">
+          <img class="page-header__logo-picture" src="./images/logo-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
         </picture>
-
-        <picture>
-          <source width="118" height="21" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logos/logo-text-desktop.svg">
-          <source width="101" height="18" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logos/logo-text-tablet.svg">
-          <img class="page-header__logo-text" src="./images/logos/logo-text-mobile.svg" width="101" height="20" alt="Текстовый логотип Cat Energy">
-        </picture>
+        <img class="page-header__logo-text" src="./images/cat-logo-text.svg" width="101" height="20" alt="Текстовый логотип Cat Energy">
       </a>
     </div>
 
     <nav class="page-nav">
-      <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="page-nav__toggle page-nav__toggle-close" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="page-nav__list">
         <li class="page-nav__item page-nav__item-current">
           <a href="#">Главная</a>
@@ -56,8 +51,8 @@
       <h2 class="program-selection__subtitle">Занялся собой? Займись котом!</h2>
 
       <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="./images/main/main-cup-desktop@1x.png, ./images/main/main-cup-desktop@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="./images/main/main-cup-tablet@1x.png, ./images/main/main-cup-tablet@2x.png 2x">
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="./images/main/main-cup-desktop@1x.png 1x, ./images/main/main-cup-desktop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="./images/main/main-cup-tablet@1x.png 1x, ./images/main/main-cup-tablet@2x.png 2x">
         <img class="program-selection__promo-image" src="./images/main/main-cup-mobile@1x.png" srcset="./images/main/main-cup-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
       </picture>
 
@@ -108,12 +103,13 @@
       </ul>
       <div class="program-results__expenses">Затраты на питание: 15 000 РУБ.</div>
       <div class="program-results__slider">
+        <button class="program-results__slider-button" type="button"><span class="visually-hidden">Передвинь ползунок</span></button>
         <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/slider/slider-before-tablet@1x.png, ./images/slider/slider-before-tablet@2x.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/slider/slider-before-tablet@1x.png 1x, ./images/slider/slider-before-tablet@2x.png 2x">
           <img class="program-results__slider-image" src="./images/slider/slider-before-mobile@1x.png" srcset="./images/slider/slider-before-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до похудения">
         </picture>
         <picture>
-          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/slider/slider-after-tablet@1x.png, ./images/slider/slider-after-tablet@2x.png 2x">
+          <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/slider/slider-after-tablet@1x.png 1x, ./images/slider/slider-after-tablet@2x.png 2x">
           <img class="program-results__slider-image" src="./images/slider/slider-after-mobile@1x.png" srcset="./images/slider/slider-after-mobile@2x.png 2x" width="280" height="256" alt="Фото кота до похудения">
         </picture>
       </div>
@@ -131,22 +127,28 @@
       <li class="page-footer__item">
         <div class="page-footer__item-logo">
           <a class="page-footer__logo-text" href="#">
-            <img class="page-footer__item-logo-text" src="./images/logos/logo-text-mobile.svg" width="128" height="24" alt="Текстовый логотип Cat Energy">
+            <img class="page-footer__item-logo-text" src="./images/cat-logo-text.svg" width="128" height="24" alt="Текстовый логотип Cat Energy">
           </a>
         </div>
       </li>
 
       <li class="page-footer__item">
-        <div class="page-footer__item-socials">
-          <a class="page-footer__link-social" href="#">ВКонтакте</a>
-          <a class="page-footer__link-social" href="#">ЮТюб</a>
-          <a class="page-footer__link-social" href="#">Телеграм</a>
-        </div>
+        <ul class="page-footer__list-socials">
+          <li class="page-footer__item-social">
+            <a class="page-footer__social-link vk" href="#">ВКонтакте</a>
+          </li>
+          <li class="page-footer__item-social">
+            <a class="page-footer__social-link youtube" href="#">ЮТюб</a>
+          </li>
+          <li class="page-footer__item-social">
+            <a class="page-footer__social-link telegram" href="#">Телеграм</a>
+          </li>
+        </ul>
       </li>
 
       <li class="page-footer__item">
         <div class="page-footer__item-academy-logo">
-          <a class="page-footer__item-academy-logo-link" href="#">HTML Academy<img class="page-footer__item-academy-logo-img" src="./images/logos/logo-academy-picture.svg" width="27" height="34" alt="Логотип академии"></a>
+          <a class="page-footer__item-academy-logo-link" href="#">HTML Academy<img class="page-footer__item-academy-logo-img" src="./images/logo-academy-picture.svg" width="27" height="34" alt="Логотип академии"></a>
         </div>
       </li>
     </ul>

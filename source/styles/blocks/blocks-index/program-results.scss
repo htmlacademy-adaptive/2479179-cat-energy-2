@@ -28,3 +28,46 @@
   text-transform: uppercase;
   color: #000000;
 }
+
+.program-results__slider {
+  position: relative;
+}
+
+.program-results__slider-button {
+  cursor: pointer;
+  color: #666666;
+  height: 100%;
+  width: 4px;
+  border-radius: 2px;
+  position: absolute;
+  display: block;
+  padding: 0;
+}
+
+.program-results__slider-button::before {
+  content: "";
+  border: 2px solid #666666;
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.program-results__slider-button::after {
+  content: "";
+  background-color: #666666;
+  width: 24px;
+  height: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mask-image: url("../../icons/stack.svg#slider-triangle");
+  mask-position: 50%;
+  mask-size: 24px 18px;
+  mask-repeat: no-repeat;
+}

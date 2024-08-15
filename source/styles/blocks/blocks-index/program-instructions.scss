@@ -4,3 +4,30 @@
   font-size: 36px;
   line-height: 40px;
 }
+
+.program-instructions__item::before {
+  content: "";
+  background-color: $bg-base-color;
+  background-size: 30px 32px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.program-instructions__item:nth-child(1)::before {
+  background-image: url("../../icons/stack.svg#instructions-leaf");
+}
+
+.program-instructions__item:nth-child(2)::before {
+  background-image: url("../../icons/stack.svg#instructions-water");
+}
+
+.program-instructions__item:nth-child(3)::before {
+  background-image: url("../../icons/stack.svg#instructions-cutlery");
+}
+
+.program-instructions__item:last-child::before {
+  background-image: url("../../icons/stack.svg#instructions-timer");
+}
