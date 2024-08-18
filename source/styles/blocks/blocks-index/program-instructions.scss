@@ -3,7 +3,31 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+  margin: 0;
 }
+
+.program-instructions__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .program-instructions__list {
+    display: grid;
+    grid-template-columns: 230px 230px;
+    grid-template-rows: 280px 280px;
+    gap: 37px 153px;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-instructions__list {
+    display: flex;
+  }
+}
+
 
 .program-instructions__item::before {
   content: "";
@@ -30,4 +54,9 @@
 
 .program-instructions__item:last-child::before {
   background-image: url("../../icons/stack.svg#instructions-timer");
+}
+
+.program-instructions__text {
+  margin: 0;
+  text-align: left;
 }

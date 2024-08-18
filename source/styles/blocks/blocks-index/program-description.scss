@@ -32,6 +32,17 @@
   mask-repeat: no-repeat;
 }
 
+.program-description__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__list {
+    display: flex;
+  }
+}
 
 .program-description__item:first-child {
   background-image: url("../../icons/stack.svg#program-cat");

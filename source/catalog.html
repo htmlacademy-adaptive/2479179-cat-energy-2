@@ -27,16 +27,16 @@
     </div>
 
     <nav class="page-nav">
-      <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="page-nav__toggle page-nav__toggle-close" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="page-nav__list">
+        <li class="page-nav__item">
+          <a class="page-nav__item-link" href="./index.html">Главная</a>
+        </li>
         <li class="page-nav__item page-nav__item-current">
-          <a href="./index.html">Главная</a>
+          <a class="page-nav__item-link" href="#">Каталог продукции</a>
         </li>
         <li class="page-nav__item">
-          <a href="#">Каталог продукции</a>
-        </li>
-        <li class="page-nav__item">
-          <a href="#">Подбор продукции</a>
+          <a class="page-nav__item-link" href="#">Подбор продукции</a>
         </li>
       </ul>
 
@@ -214,46 +214,50 @@
           </dl>
           <button class="catalog__item-button" type="button">Заказать</button>
         </li>
-      </ul>
 
-      <div class="catalog__display-all">
-        <h2 class="catalog__display-all-title">Показать еще 100500 товаров</h2>
-        <p class="catalog__display-all-text">На самом деле вкусов гораздо больше!</p>
-        <button class="catalog__display-all-button" type="button">Показать все</button>
-      </div>
+        <li class="catalog__item">
+          <div class="catalog__display-all">
+            <h2 class="catalog__display-all-title">Показать еще 100500 товаров</h2>
+            <p class="catalog__display-all-text">На самом деле вкусов гораздо больше!</p>
+            <button class="catalog__display-all-button" type="button">Показать все</button>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <section class="additional-products">
       <h2 class="additional-products__title">Дополнительные товары</h2>
-      <ul class="additional-products__list">
-        <li class="additional-products__item">
-          <h3 class="additional-products__item-title">Сахарозаменитель</h3>
-          <p class="additional-products__item-information">1 упаковка (100 г)</p>
-          <p class="additional-products__item-price">200 ₽</p>
+      <div class="additional-products__wrapper">
+        <ul class="additional-products__list">
+          <li class="additional-products__item">
+            <h3 class="additional-products__item-title">Сахарозаменитель</h3>
+            <p class="additional-products__item-information">1 упаковка (100 г)</p>
+            <p class="additional-products__item-price">200 ₽</p>
 
-          <button class="additional-products__item-button" type="button">Заказать</button>
-        </li>
-        <li class="additional-products__item">
-          <h3 class="additional-products__item-title">Питьевая вода</h3>
-          <p class="additional-products__item-information">5 литров</p>
-          <p class="additional-products__item-price">50 ₽</p>
-          <button class="additional-products__item-button" type="button">Заказать</button>
-        </li>
-        <li class="additional-products__item">
-          <h3 class="additional-products__item-title">Молоко</h3>
-          <p class="additional-products__item-information">1 литр</p>
-          <p class="additional-products__item-price">100 ₽</p>
-          <button class="additional-products__item-button" type="button">Заказать</button>
-        </li>
-        <li class="additional-products__item">
-          <h3 class="additional-products__item-title">Витамины</h3>
-          <p class="additional-products__item-information">1 упаковка (30 г)</p>
-          <p class="additional-products__item-price">300 ₽</p>
-          <button class="additional-products__item-button" type="button">Заказать</button>
-        </li>
-      </ul>
-      <div class="additional-products__select-all">
-        <h3 class="additional-products__select-all-title">Закажите все и получите чехол для кота в подарок!</h3>
+            <button class="additional-products__item-button" type="button">Заказать</button>
+          </li>
+          <li class="additional-products__item">
+            <h3 class="additional-products__item-title">Питьевая вода</h3>
+            <p class="additional-products__item-information">5 литров</p>
+            <p class="additional-products__item-price">50 ₽</p>
+            <button class="additional-products__item-button" type="button">Заказать</button>
+          </li>
+          <li class="additional-products__item">
+            <h3 class="additional-products__item-title">Молоко</h3>
+            <p class="additional-products__item-information">1 литр</p>
+            <p class="additional-products__item-price">100 ₽</p>
+            <button class="additional-products__item-button" type="button">Заказать</button>
+          </li>
+          <li class="additional-products__item">
+            <h3 class="additional-products__item-title">Витамины</h3>
+            <p class="additional-products__item-information">1 упаковка (30 г)</p>
+            <p class="additional-products__item-price">300 ₽</p>
+            <button class="additional-products__item-button" type="button">Заказать</button>
+          </li>
+        </ul>
+        <div class="additional-products__select-all">
+          <h3 class="additional-products__select-all-title">Закажите все и получите чехол для кота в подарок!</h3>
+        </div>
       </div>
     </section>
 
@@ -282,6 +286,7 @@
           </a>
         </div>
       </li>
+
       <li class="page-footer__item">
         <ul class="page-footer__list-socials">
           <li class="page-footer__item-social">
@@ -295,9 +300,10 @@
           </li>
         </ul>
       </li>
+
       <li class="page-footer__item">
-        <div class="page-footer__item-academy-logo">
-          <a class="page-footer__item-academy-logo-link" href="#">HTML Academy<img class="page-footer__item-academy-logo-img" src="./images/logo-academy-picture.svg" width="27" height="34" alt="Логотип академии"></a>
+        <div class="page-footer__academy-logo">
+          <a class="page-footer__academy-logo-link" href="#">HTML Academy<img class="page-footer__academy-logo-img" src="./images/logo-academy-picture.svg" width="27" height="34" alt="Логотип академии"></a>
         </div>
       </li>
     </ul>
