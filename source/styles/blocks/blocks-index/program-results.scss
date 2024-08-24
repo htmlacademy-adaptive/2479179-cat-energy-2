@@ -8,31 +8,56 @@
   font-weight: 400;
   line-height: 40px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
+  padding-top: 25px;
+  text-align: left;
+}
+
+.program-results__text {
+  width: 280px;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .program-results__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
 }
 
 .program-results__item {
-  font-size: 12px;
-  line-height: 12px;
-}
-
-.program-results__item-number {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
   font-family: $Oswald;
   font-size: 24px;
   line-height: 24px;
   color: #000000;
 }
 
+.results__text-wrapper {
+  font-family: $lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #444444;
+}
+
+.program-results__item:last-child {
+  margin-left: auto;
+}
+
+
 .program-results__expenses {
   font-family: $Oswald;
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+  margin: 20px auto;
 }
 
 .program-results__slider {

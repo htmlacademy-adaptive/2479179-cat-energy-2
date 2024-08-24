@@ -15,6 +15,29 @@
   text-align: center;
 }
 
+
 .visually-hidden {
   display: none;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+@media (min-width: $mobile-width) {
+  .container {
+    width: 280px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 708px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1220px;
+  }
 }

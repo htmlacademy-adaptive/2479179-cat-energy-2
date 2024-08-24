@@ -1,3 +1,10 @@
+.contacts {
+  display: flex;
+  text-align: left;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
 .contacts__title {
   font-family: $Oswald;
   font-size: 16px;
@@ -5,8 +12,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  margin: 0;
 }
 
 .contacts__adress {
   line-height: 20px;
+  margin: 0;
 }

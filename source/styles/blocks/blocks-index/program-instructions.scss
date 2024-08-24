@@ -4,6 +4,10 @@
   font-size: 36px;
   line-height: 40px;
   margin: 0;
+  color: #000000;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  text-align: left;
 }
 
 .program-instructions__list {
@@ -28,6 +32,10 @@
   }
 }
 
+.program-instructions__item {
+  display: flex;
+  margin-bottom: 20px;
+}
 
 .program-instructions__item::before {
   content: "";
@@ -54,9 +62,12 @@
 
 .program-instructions__item:last-child::before {
   background-image: url("../../icons/stack.svg#instructions-timer");
+  margin-bottom: 49px;
 }
 
 .program-instructions__text {
   margin: 0;
   text-align: left;
+  width: 200px;
+  margin-left: 20px;
 }

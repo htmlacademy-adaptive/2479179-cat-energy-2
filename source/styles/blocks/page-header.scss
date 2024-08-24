@@ -1,8 +1,21 @@
-
 @media (min-width: $tablet-width) {
   .page-header {
     display: flex;
   }
+}
+
+.page-header__logo {
+  height: 66px;
+}
+
+.page-header__logo-link {
+  display: flex;
+  padding-top: 13px;
+  align-items: center;
+}
+
+.page-header__logo-text {
+  margin-left: 56px;
 }
 
 .page-nav {
@@ -11,6 +24,12 @@
   line-height: 20px;
   text-transform: uppercase;
   margin-left: auto;
+}
+
+.page-nav__item {
+  height: 66px;
+  border-top: solid 0.5px #e6e6e6;
+  border-bottom: solid 0.5px #e6e6e6;
 }
 
 .page-nav__list {
@@ -28,6 +47,8 @@
 .page-nav__item-link {
   text-decoration: none;
   color: #000000;
+  display: block;
+  padding-top: 22px;
 }
 
 .page-nav__toggle {
@@ -38,6 +59,9 @@
   border: none;
   width: 24px;
   height: 24px;
+  position: absolute;
+  top: 21px;
+  right: 25px;
 }
 
 @media (min-width: $tablet-width) {

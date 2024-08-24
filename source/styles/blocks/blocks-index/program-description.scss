@@ -1,36 +1,3 @@
-.program-description {
-  background-color: #d9d9d9;
-}
-
-.program-description__title {
-  font-family: $Oswald;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.program-description__link {
-  display: flex;
-  font-family: $Oswald;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.program-description__link::after {
-  content: "";
-  width: 24px;
-  height: 12px;
-  background-color: #000000;
-  mask-image: url("../../icons/stack.svg#program-arrow");
-  mask-position: 100%;
-  mask-size: 24px 12px;
-  mask-repeat: no-repeat;
-}
 
 .program-description__list {
   list-style: none;
@@ -44,10 +11,73 @@
   }
 }
 
-.program-description__item:first-child {
-  background-image: url("../../icons/stack.svg#program-cat");
+.program-description__item {
+  margin-top: 20px;
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 }
 
-.program-description__item {
+.program-description__item:nth-child(1) {
+  background-image: url("../../icons/stack.svg#program-cat");
+  background-size: 50px 53px;
+  background-position: 20px 21px;
+}
+
+.program-description__item:nth-child(2) {
   background-image: url("../../icons/stack.svg#program-tiger");
+  background-size: 67px 50px;
+  background-position: 13px 24px;
+}
+
+.program-description__title {
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 15px;
+  position: relative;
+  left: 8px;
+}
+
+.program-description__text {
+  margin: 29px 33px 38px 20px;
+  width: 227px;
+  text-align: left;
+}
+
+.program-description__break-line {
+  border: 1px solid #d9d9d9;
+  width: 240px;
+  margin: auto;
+}
+
+.program-description__link {
+  display: flex;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin: 15px auto 18px 20px;
+}
+
+.program-description__link::after {
+  content: "";
+  width: 24px;
+  height: 12px;
+  background-color: #000000;
+  mask-image: url("../../icons/stack.svg#program-arrow");
+  mask-position: 100%;
+  mask-size: 24px 12px;
+  mask-repeat: no-repeat;
+  align-self: center;
+  margin-left: 15px;
 }

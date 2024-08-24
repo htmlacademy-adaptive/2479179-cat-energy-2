@@ -1,18 +1,25 @@
 .program-selection {
   font-family: $Oswald;
   color: #ffffff;
-  background-color: $bg-base-color;
+  background-image: url("../../../images/main/index-background-mobile.png"), url("../../../images/main/index-background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .program-selection__title {
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
+  margin: 0;
+  padding-top: 27px;
+  margin-bottom: 25px;
 }
 
 .program-selection__subtitle {
   line-height: 14px;
-  font-style: 14px;
+  font-size: 14px;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .program-selection__button {
@@ -23,4 +30,6 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: $bg-base-color;
+  height: 40px;
+  border: none;
 }
