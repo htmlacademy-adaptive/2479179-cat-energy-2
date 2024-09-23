@@ -1,22 +1,42 @@
+.program-description {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-description {
+    margin-bottom: 45px;
+  }
+}
 
 .program-description__list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media (min-width: $desktop-width) {
   .program-description__list {
-    display: flex;
+    flex-direction: row;
+    gap: 80px;
   }
 }
 
 .program-description__item {
-  margin-top: 20px;
   background-color: #f2f2f2;
   background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
+  padding: 30px 33px 18px 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .program-description__item {
+    padding: 77px 61px 55px 52px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .program-description__item:nth-child(1) {
@@ -25,36 +45,104 @@
   background-position: 20px 21px;
 }
 
+@media (min-width: $tablet-width) {
+  .program-description__item:nth-child(1) {
+    background-size: 200px 200px;
+    background-position: 460px 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__item:nth-child(1) {
+    background-size: 100px 106px;
+    background-position: 52px 41px;
+    flex-basis: 570px;
+  }
+}
+
 .program-description__item:nth-child(2) {
   background-image: url("../../icons/stack.svg#program-tiger");
   background-size: 67px 50px;
   background-position: 13px 24px;
 }
 
+@media (min-width: $tablet-width) {
+  .program-description__item:nth-child(2) {
+    background-size: 268px 200px;
+    background-position: 430px 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__item:nth-child(2) {
+    background-size: 134px 100px;
+    background-position: 33px 47px;
+    flex-basis: 570px;
+  }
+}
+
 .program-description__title {
   font-family: $Oswald;
-  font-weight: 400;
   font-size: 24px;
+  font-weight: 400;
   line-height: 37px;
+  margin: 0 0 29px 90px;
+  margin-bottom: 29px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0;
-  margin-top: 30px;
-  margin-left: 15px;
-  position: relative;
-  left: 8px;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .program-description__title {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 73px;
+    text-align: left;
+    margin-left: 214px;
+  }
 }
 
 .program-description__text {
-  margin: 29px 33px 38px 20px;
-  width: 227px;
   text-align: left;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-description__text {
+    margin: 0;
+    margin-bottom: 47px;
+    max-width: 340px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__text {
+    font-size: 16px;
+    line-height: 21px;
+    max-width: 100%;
+  }
 }
 
 .program-description__break-line {
   border: 1px solid #d9d9d9;
-  width: 240px;
-  margin: auto;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-description__break-line {
+    border: none;
+    display: none;
+  }
 }
 
 .program-description__link {
@@ -66,7 +154,7 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  margin: 15px auto 18px 20px;
+  gap: 15px;
 }
 
 .program-description__link::after {
@@ -79,5 +167,13 @@
   mask-size: 24px 12px;
   mask-repeat: no-repeat;
   align-self: center;
-  margin-left: 15px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .program-description__link {
+    font-size: 20px;
+    line-height: 29.64px;
+    gap: 25px;
+  }
 }

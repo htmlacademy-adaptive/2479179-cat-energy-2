@@ -4,43 +4,33 @@
 
 .page-footer__list {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  padding-bottom: 40px;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-direction: column;
 }
-
 
 @media (min-width: $tablet-width) {
   .page-footer__list {
-    display: flex;
-  }
-
-  .page-footer__item:nth-child(1) {
-    margin-right: auto;
-  }
-
-  .page-footer__item:nth-child(2) {
-    justify-content: center;
-  }
-
-  .page-footer__item:nth-child(3) {
-    margin-left: auto;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
+
 .page-footer__item-logo-text {
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: auto;
 }
 
 .page-footer__list-socials {
-  list-style: none;
+  gap: 24px;
   padding: 0;
+  list-style: none;
   display: flex;
   justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
+
 
 .page-footer__social-link {
   background-position: 50%;
@@ -65,8 +55,6 @@
   width: 28px;
   height: 22px;
   display: block;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .telegram {
@@ -79,19 +67,19 @@
   display: block;
 }
 
-
 .page-footer__academy-logo-link {
   text-decoration: none;
   color: $base-color-text;
   font-size: 16px;
   line-height: 20px;
   display: flex;
-  margin: 0;
-  margin-top: 20px;
+  justify-content: space-between;
+  gap: 23px;
+  align-items: center;
 }
 
 .page-footer__academy-logo-img {
-  margin-left: auto;
+  display: flex;
 }
 
 .page-footer__break-line {
@@ -100,3 +88,9 @@
   margin: auto;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer__break-line {
+    border: none;
+    display: none;
+  }
+}

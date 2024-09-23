@@ -1,40 +1,66 @@
+.program-instructions {
+  margin-bottom: 49px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-instructions {
+    margin-bottom: 47px;
+  }
+}
+
 .program-instructions__title {
   font-family: $Oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   margin: 0;
-  color: #000000;
   margin-bottom: 40px;
-  margin-top: 20px;
+  color: #000000;
   text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .program-instructions__title {
+    font-size: 60px;
+    line-height: 40px;
+  }
 }
 
 .program-instructions__list {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .program-instructions__list {
-    display: grid;
-    grid-template-columns: 230px 230px;
-    grid-template-rows: 280px 280px;
+    flex-flow: row wrap;
     gap: 37px 153px;
-    justify-content: center;
   }
 }
 
 @media (min-width: $desktop-width) {
   .program-instructions__list {
-    display: flex;
+    gap: 77px;
+    counter-reset: work;
   }
 }
 
 .program-instructions__item {
   display: flex;
-  margin-bottom: 20px;
+  gap: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-instructions__item {
+    flex-direction: column;
+    flex-basis: 247px;
+    padding-bottom: 60px;
+    padding-top: 50px;
+  }
 }
 
 .program-instructions__item::before {
@@ -46,6 +72,13 @@
   width: 60px;
   height: 60px;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .program-instructions__item::before {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .program-instructions__item:nth-child(1)::before {
@@ -62,12 +95,41 @@
 
 .program-instructions__item:last-child::before {
   background-image: url("../../icons/stack.svg#instructions-timer");
-  margin-bottom: 49px;
 }
 
+
+@media (min-width: $tablet-width) {
+  .program-instructions__item {
+    counter-increment: work;
+    position: relative;
+  }
+
+  .program-instructions__text::after {
+    content: counter(work);
+    position: absolute;
+    color: #f2f2f2;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    font-family: $Oswald;
+    z-index: -1;
+    top: 10px;
+    left: 111px;
+  }
+}
+
+
 .program-instructions__text {
-  margin: 0;
   text-align: left;
-  width: 200px;
-  margin-left: 20px;
+  margin: 0;
+  max-width: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-instructions__text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #444444;
+    max-width: 100%;
+  }
 }

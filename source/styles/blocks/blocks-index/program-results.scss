@@ -1,5 +1,37 @@
 .program-results {
   background-color: #eaeaea;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-results {
+    background-color: #ffffff;
+    border-top: 1px solid #e6e6e6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-results {
+    background-color: #ffffff;
+    display: flex;
+    border: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-results__wrapper {
+    display: flex;
+    margin-bottom: 99px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-results__wrapper {
+    margin-left: 110px;
+    flex-flow: wrap;
+    max-width: 500px;
+  }
 }
 
 .program-results__title {
@@ -10,15 +42,41 @@
   color: #000000;
   margin: 0;
   margin-bottom: 40px;
-  padding-top: 25px;
   text-align: left;
 }
 
+@media (min-width: $tablet-width) {
+  .program-results__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-results__title {
+    margin-left: 110px;
+  }
+}
+
 .program-results__text {
-  width: 280px;
   text-align: left;
   margin: 0;
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-results__text {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-results__text {
+    margin-left: 110px;
+    margin-bottom: 69px;
+  }
 }
 
 .program-results__list {
@@ -28,23 +86,69 @@
   display: flex;
 }
 
-.program-results__item {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
-  font-family: $Oswald;
-  font-size: 24px;
-  line-height: 24px;
-  color: #000000;
+@media (min-width: $tablet-width) {
+  .program-results__list {
+    flex-basis: 367px;
+    gap: 43px;
+  }
 }
 
-.results__text-wrapper {
-  font-family: $lato;
+@media (min-width: $desktop-width) {
+  .program-results__list {
+    margin-bottom: 55px;
+  }
+}
+
+
+.program-results__item {
+  color: #000000;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  flex-basis: 124px;
+  padding: 14.47px 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .program-results__item {
+    font-size: 30px;
+    line-height: 37px;
+    flex-basis: 162px;
+  }
+}
+
+.program-results__text-wrapper {
+  color: #444444;
+  background-color: #eaeaea;
+  width: 81px;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
-  color: #444444;
+  position: absolute;
+  top: 44px;
+  left: 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .program-results__text-wrapper {
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    top: 58px;
+    left: 12px;
+    width: 136px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-results__text-wrapper {
+    top: 57px;
+  }
 }
 
 .program-results__item:last-child {
@@ -57,48 +161,27 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
-  margin: 20px auto;
+  margin: 20px 0;
 }
 
-.program-results__slider {
-  position: relative;
+@media (min-width: $tablet-width) {
+  .program-results__expenses {
+    font-size: 20px;
+    margin-left: auto;
+    flex-basis: 174px;
+    text-align: right;
+  }
 }
 
-.program-results__slider-button {
-  cursor: pointer;
-  color: #666666;
-  height: 100%;
-  width: 4px;
-  border-radius: 2px;
-  position: absolute;
-  display: block;
-  padding: 0;
-}
+@media (min-width: $desktop-width) {
+  .program-results__expenses {
+    flex-basis: 310px;
+    text-align: left;
+    margin: 0;
+    display: flex;
+  }
 
-.program-results__slider-button::before {
-  content: "";
-  border: 2px solid #666666;
-  background-color: #ffffff;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.program-results__slider-button::after {
-  content: "";
-  background-color: #666666;
-  width: 24px;
-  height: 18px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  mask-image: url("../../icons/stack.svg#slider-triangle");
-  mask-position: 50%;
-  mask-size: 24px 18px;
-  mask-repeat: no-repeat;
+  .program-results__amount-wrapper {
+    margin-left: auto;
+  }
 }

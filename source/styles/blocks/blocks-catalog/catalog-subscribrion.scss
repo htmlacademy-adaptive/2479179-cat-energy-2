@@ -1,9 +1,56 @@
+.catalog-subscribrion {
+  overflow-x: hidden;
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-subscribrion {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.catalog-subscribrion__inner {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-subscribrion__title {
+  color: #000000;
+  text-align: left;
+  align-self: flex-start;
+  margin: 40px 0 32px;
   font-family: $Oswald;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-  color: #000000;
+  position: relative;
+}
+
+.catalog-subscribrion__title::before,
+.catalog-subscribrion__title::after {
+  content: "";
+  background-color: #68b738;
+  width: 100vw;
+  height: 3px;
+  position: absolute;
+  top: calc(50% - 1.5px);
+}
+
+.catalog-subscribrion__title::before {
+  left: calc(100% + 40px);
+}
+
+.catalog-subscribrion__title::after {
+  right: calc(100% + 40px);
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog-subscribrion__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 56px;
+  }
 }
 
 .catalog-subscribrion__text {
@@ -12,6 +59,34 @@
   font-weight: 400;
   line-height: 24px;
   color: #000000;
+  margin-bottom: 24px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog-subscribrion__text {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0 37px;
+    margin-bottom: 24px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog-subscribrion__form {
+    display: flex;
+    margin: 0 38px 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-subscribrion__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .catalog-subscribrion__input {
@@ -21,6 +96,25 @@
   line-height: 29.64px;
   text-transform: uppercase;
   color: #444444;
+  margin-bottom: 16px;
+  border: 1px solid #cdcdcd;
+  padding: 13px;
+  width: 100%;
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog-subscribrion__input {
+    width: 376px;
+    height: 56px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-subscribrion__input {
+    width: 496px;
+  }
 }
 
 .catalog-subscribrion__button {
@@ -31,4 +125,34 @@
   color: #ffffff;
   text-transform: uppercase;
   background-color: $bg-base-color;
+  border: none;
+  padding: 15px 0;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-subscribrion__button {
+
+    margin-bottom: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .catalog-subscribrion__button {
+
+    width: 256px;
+  }
+}
+
+.catalog__contacts {
+  background-color: #f2f2f2;
+  padding: 26px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__contacts {
+    padding: 70px;
+  }
 }
