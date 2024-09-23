@@ -16,7 +16,7 @@
   display: block;
   height: 302px;
   width: 100%;
-  background-image: url("../../../images/index-background-mobile-green.png"), url("../../../images/index-background-mobile.png");
+  background-image: url("../../../images/index-mobile-green@1x.png"), url("../../../images/index-mobile-cat@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 138px;
@@ -38,7 +38,7 @@
     padding: 0;
     width: 50%;
     height: 694px;
-    background-image: url("../../../images/index-background-desktop-green.png"), url("../../../images/index-background-desktop.png");
+    background-image: url("../../../images/index-desktop-green@1x.png"), url("../../../images/index-desktop-cat@1x.png");
     background-size: cover;
   }
 }
