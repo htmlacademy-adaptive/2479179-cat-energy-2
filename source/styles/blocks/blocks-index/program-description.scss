@@ -1,0 +1,213 @@
+.program-description {
+  margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-description {
+    margin-bottom: 45px;
+  }
+}
+
+.program-description__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-description__list {
+    gap: 30px;
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__list {
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 80px;
+  }
+}
+
+.program-description__item {
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  padding: 30px 33px 18px 20px;
+  min-height: 266px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .program-description__item {
+    padding: 77px 61px 55px 52px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__item {
+    padding-top: 81px;
+  }
+}
+
+.program-description__item:nth-child(1) {
+  background-image: url("../../icons/stack.svg#program-cat");
+  background-size: 50px 53px;
+  background-position: 20px 21px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-description__item:nth-child(1) {
+    background-size: 204px 211px;
+    background-position: 445px 81px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__item:nth-child(1) {
+    background-size: 100px 106px;
+    background-position: 52px 41px;
+    flex-basis: 570px;
+  }
+}
+
+.program-description__item:nth-child(2) {
+  background-image: url("../../icons/stack.svg#program-tiger");
+  background-size: 67px 50px;
+  background-position: 13px 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-description__item:nth-child(2) {
+    background-size: 268px 200px;
+    background-position: 415px 93px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__item:nth-child(2) {
+    background-size: 134px 100px;
+    background-position: 33px 47px;
+    flex-basis: 570px;
+  }
+}
+
+.program-description__title {
+  font-family: $Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  margin: 0 0 29px 70px;
+  margin-bottom: 29px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+@media (min-width: $tablet-width) {
+  .program-description__title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 79px;
+    text-align: left;
+    margin-left: 162px;
+  }
+}
+
+.program-description__text {
+  text-align: left;
+  margin: 0;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+@media (min-width: $tablet-width) {
+  .program-description__text {
+    margin: 0 0 37px;
+    max-width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-description__text {
+    font-size: 16px;
+    line-height: 21px;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+.program-description__break-line {
+  border: 1px solid #d9d9d9;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .program-description__break-line {
+    border: none;
+    display: none;
+  }
+}
+
+.program-description__link {
+  display: flex;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  gap: 15px;
+  padding-top: 17px;
+}
+
+.program-description__link:active {
+  opacity: 0.3;
+}
+
+.program-description__link::after {
+  content: "";
+  width: 24px;
+  height: 12px;
+  background-color: #000000;
+  mask-image: url("../../icons/stack.svg#program-arrow");
+  mask-position: 100%;
+  mask-size: 24px 12px;
+  mask-repeat: no-repeat;
+  align-self: center;
+}
+
+.program-description__link:hover::after,
+.program-description__link:focus::after,
+.program-description__link:active::after {
+  width: 32px;
+  mask-size: 32px 12px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .program-description__link {
+    font-size: 20px;
+    line-height: 29.64px;
+    gap: 25px;
+  }
+}
