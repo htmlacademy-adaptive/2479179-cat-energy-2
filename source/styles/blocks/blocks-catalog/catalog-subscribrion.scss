@@ -18,12 +18,12 @@
   color: #000000;
   text-align: left;
   align-self: flex-start;
-  margin: 40px 0 32px;
   font-family: $Oswald;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   position: relative;
+  margin: 0 0 32px;
 }
 
 .catalog-subscribrion__title::before,
@@ -47,9 +47,36 @@
 
 @media (min-width: $tablet-width) {
   .catalog-subscribrion__title {
+    text-align: center;
+    width: 279px;
+    margin-bottom: 68px;
     font-size: 32px;
     line-height: 32px;
-    margin-bottom: 56px;
+  }
+
+  .catalog-subscribrion__title::before {
+    left: calc(100% + 4px);
+  }
+
+  .catalog-subscribrion__title::after {
+    right: calc(100% + 1px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-subscribrion__title {
+    font-size: 40px;
+    line-height: 40px;
+    width: 255px;
+    margin-bottom: 73px;
+  }
+
+  .catalog-subscribrion__title::before {
+    left: calc(100% + 37px);
+  }
+
+  .catalog-subscribrion__title::after {
+    right: calc(100% + 40px);
   }
 }
 
@@ -59,7 +86,7 @@
   font-weight: 400;
   line-height: 24px;
   color: #000000;
-  margin-bottom: 24px;
+  margin: 0 0 24px;
 }
 
 
@@ -73,11 +100,28 @@
   }
 }
 
+.catalog-subscribrion__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
 
 @media (min-width: $tablet-width) {
   .catalog-subscribrion__form {
-    display: flex;
-    margin: 0 38px 80px;
+    width: 632px;
+    flex-direction: row;
+    gap: 0;
+    margin-bottom: 80px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-subscribrion__form {
+    width: 752px;
+    margin-bottom: 100px;
   }
 }
 
@@ -90,58 +134,39 @@
 }
 
 .catalog-subscribrion__input {
-  font-family: $Oswald;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 29.64px;
-  text-transform: uppercase;
-  color: #444444;
-  margin-bottom: 16px;
-  border: 1px solid #cdcdcd;
+  display: inline-flex;
   padding: 13px;
-  width: 100%;
-}
-
-
-@media (min-width: $tablet-width) {
-  .catalog-subscribrion__input {
-    width: 376px;
-    height: 56px;
-    margin-bottom: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .catalog-subscribrion__input {
-    width: 496px;
-  }
-}
-
-.catalog-subscribrion__button {
+  border: 1px solid #e7e7e7;
   font-family: $Oswald;
   font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
-  color: #ffffff;
+  line-height: 28px;
   text-transform: uppercase;
-  background-color: $bg-base-color;
-  border: none;
-  padding: 15px 0;
-  margin-bottom: 40px;
-  width: 100%;
+  color: $base-color-text;
+  outline: none;
+}
+
+.catalog-subscribrion__input::placeholder {
+  color: $base-color-text;
+}
+
+.catalog-subscribrion__input:hover {
+  border-color: #cdcdcd;
+}
+
+.catalog-subscribrion__input:focus {
+  padding: 12px;
+  border-width: 2px;
+  border-color: $base-color-text;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-subscribrion__input {
+    flex-grow: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .catalog-subscribrion__button {
-
-    margin-bottom: 0;
-  }
-}
-
-
-@media (min-width: $desktop-width) {
-  .catalog-subscribrion__button {
-
     width: 256px;
   }
 }

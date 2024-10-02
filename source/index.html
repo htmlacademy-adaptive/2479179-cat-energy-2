@@ -15,51 +15,45 @@
 
 <body class="page-body">
   <header class="page-header container container-mobile">
-    <div class="page-header__logo">
-      <a class="page-header__logo-link" href="#">
-        <picture>
-          <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-picture-desktop.svg">
-          <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-picture-tablet.svg">
-          <img class="page-header__logo-picture" src="./images/logo-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
-        </picture>
-        <img class="page-header__logo-text" src="./images/cat-logo-text.svg" width="101" height="20" alt="Текстовый логотип Cat Energy">
-      </a>
-    </div>
+    <a class="page-header__logo" href="#">
+      <picture class="page-header__logo-picture">
+        <source width="70" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="./images/logo-picture-desktop.svg">
+        <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="./images/logo-picture-tablet.svg">
+        <img src="./images/logo-picture-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+      </picture>
+      <img class="page-header__logo-text" src="./images/cat-logo-text.svg" width="101" height="20" alt="Текстовый логотип Cat Energy">
+    </a>
 
-    <nav class="page-nav">
-      <button class="page-nav__toggle page-nav__toggle--opened" type="button"><span class="visually-hidden">Открыть меню</span></button>
-
-      <ul class="page-nav__list page-nav__list--opened">
-        <li class="page-nav__item page-nav__item-current">
-          <a class="page-nav__item-link" href="#">Главная</a>
+    <nav class="page-nav page-nav--highlighted">
+      <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <ul class="page-nav__list">
+        <li class="page-nav__item">
+          <a class="page-nav__item-link page-nav__item-link--active" href="#">Главная</a>
         </li>
         <li class="page-nav__item">
           <a class="page-nav__item-link" href="./catalog.html">Каталог продукции</a>
         </li>
         <li class="page-nav__item">
-          <a class="page-nav__item-link" href="#">Подбор продукции</a>
+          <a class="page-nav__item-link" href="#">Подбор программы</a>
         </li>
       </ul>
-
     </nav>
   </header>
 
   <main>
     <section class="program-selection">
-      <div class="program-selection__background-wrapper container container-mobile">
-        <div class="program-selection__promo-text-wrapper">
-          <h1 class="program-selection__title">Функциональное
-            питание для котов</h1>
-          <h2 class="program-selection__subtitle">Занялся собой? Займись котом!</h2>
-        </div>
+      <div class="program-selection__wrapper container container-mobile">
+        <h1 class="program-selection__title">Функциональное питание для котов</h1>
+        <h2 class="program-selection__subtitle">Занялся собой? Займись котом!</h2>
+        <picture class="program-selection__promo-image">
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="./images/main/main-cup-desktop@1x.png 1x, ./images/main/main-cup-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="./images/main/main-cup-tablet@1x.png 1x, ./images/main/main-cup-tablet@2x.png 2x">
+          <img src="./images/main/main-cup-mobile@1x.png" srcset="./images/main/main-cup-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
+        </picture>
+        <button class="program-selection__button button button--growing" type="button">Подобрать программу</button>
       </div>
-      <picture>
-        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="./images/main/main-cup-desktop@1x.png 1x, ./images/main/main-cup-desktop@2x.png 2x">
-        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="./images/main/main-cup-tablet@1x.png 1x, ./images/main/main-cup-tablet@2x.png 2x">
-        <img class="program-selection__promo-image" src="./images/main/main-cup-mobile@1x.png" srcset="./images/main/main-cup-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat Energy со вкусом курицы">
-      </picture>
-      <button class="program-selection__button container container-mobile" type="button">Подобрать программу</button>
     </section>
+
     <section class="program-description container container-mobile">
 
       <ul class="program-description__list">
@@ -84,33 +78,35 @@
           <p class="program-instructions__text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
         <li class="program-instructions__item">
-          <p class="program-instructions__text">Выпускается в виде порошка,который нужно лишь залить кипятком и готово.</p>
+          <p class="program-instructions__text">Выпускается в виде порошка,
+            который нужно лишь залить
+            кипятком и готово.</p>
         </li>
         <li class="program-instructions__item">
           <p class="program-instructions__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
         <li class="program-instructions__item">
-          <p class="program-instructions__text">Уже через месяц наслаждайтесь изменениями к лучшем вашего питомца!</p>
+          <p class="program-instructions__text">Уже через месяц наслаждайтесь изменениями к лучшемy вашего питомца!</p>
         </li>
       </ol>
     </section>
 
     <section class="program-results">
-      <div class="program-results__info-wrapper container container-mobile">
+      <div class="program-results__info-wrapper">
         <h2 class="program-results__title">Живой пример</h2>
-        <p class="program-results__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        <p class="program-results__text container container-mobile">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="program-results__wrapper">
-          <ul class="program-results__list">
+        <div class="program-results__wrapper container container-mobile">
+          <ul class="program-results__list container container-mobile">
             <li class="program-results__item">5 КГ<span class="program-results__text-wrapper">снижение веса</span></li>
             <li class="program-results__item">60 ДНЕЙ<span class="program-results__text-wrapper">затрачено времени</span></li>
           </ul>
-          <div class="program-results__expenses">Затраты на питание: <span class="program-results__amount-wrapper">15 000 РУБ.</span></div>
+          <div class="program-results__expenses container container-mobile">Затраты на питание: <span class="program-results__amount-wrapper">15 000 РУБ.</span></div>
         </div>
       </div>
       <div class="program-results__slider container container-mobile">
 
-        <two-up>
+        <two-up class="slider">
           <div>
             <picture>
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/slider/slider-before-tablet@1x.png 1x, ./images/slider/slider-before-tablet@2x.png 2x">
@@ -130,11 +126,13 @@
     </section>
 
     <section class="contacts">
-      <div class="contacts__info">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacts__adress">ул. Большая Конюшенная, д.19/8
-          <span class="contacts__adress-city-wrapper"></span>Санкт-Петербург
-        </p>
+      <div class="contacts__info-wrapper">
+        <div class="contacts__info contacts__info-index container container-mobile">
+          <h2 class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
+          <p class="contacts__adress">ул. Большая Конюшенная, д.19/8
+            <span class="contacts__adress-city-wrapper"></span>Санкт-Петербург
+          </p>
+        </div>
       </div>
 
       <div class="map">
@@ -145,36 +143,25 @@
   </main>
 
   <footer class="page-footer">
-    <ul class="page-footer__list container container-mobile">
-
-      <li class="page-footer__item">
-        <div class="page-footer__item-logo">
-          <a class="page-footer__logo-text" href="#">
-            <img class="page-footer__item-logo-text" src="./images/cat-logo-text.svg" width="128" height="24" alt="Текстовый логотип Cat Energy">
-          </a>
-        </div>
-      </li>
-
-      <li class="page-footer__item">
-        <ul class="page-footer__list-socials">
-          <li class="page-footer__item-social">
-            <a class="page-footer__social-link vk" href="#">ВКонтакте</a>
-          </li>
-          <li class="page-footer__item-social">
-            <a class="page-footer__social-link youtube" href="#">ЮТюб</a>
-          </li>
-          <li class="page-footer__item-social">
-            <a class="page-footer__social-link telegram" href="#">Телеграм</a>
-          </li>
-        </ul>
-      </li>
-
-      <li class="page-footer__item">
-        <div class="page-footer__academy-logo">
-          <a class="page-footer__academy-logo-link" href="#">HTML Academy<img class="page-footer__academy-logo-img" src="./images/logo-academy-picture.svg" width="27" height="34" alt="Логотип академии"></a>
-        </div>
-      </li>
-    </ul>
+    <div class="page-footer__wrapper container container-mobile">
+      <a class="page-footer__logo" href="#">
+        <img src="./images/cat-logo-text.svg" width="128" height="24" alt="Текстовый логотип Cat Energy">
+      </a>
+      <ul class="page-footer__socials">
+        <li>
+          <a class="page-footer__social-link page-footer__social-link--vk" href="#"><span class="visually-hidden">ВКонтакте</span></a>
+        </li>
+        <li>
+          <a class="page-footer__social-link page-footer__social-link--youtube" href="#"><span class="visually-hidden">ЮТюб</span></a>
+        </li>
+        <li>
+          <a class="page-footer__social-link page-footer__social-link--telegram" href="#"><span class="visually-hidden">Телеграм</span></a>
+        </li>
+      </ul>
+      <a class="page-footer__academy" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+      </a>
+    </div>
   </footer>
   <script src="./scripts/slider.js"></script>
 

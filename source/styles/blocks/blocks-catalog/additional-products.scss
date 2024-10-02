@@ -10,7 +10,17 @@
 
 @media (min-width: $tablet-width) {
   .additional-products__inner {
-    gap: 80px;
+    gap: 0;
+  }
+
+  .additional-products {
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products {
+    margin-bottom: 97px;
   }
 }
 
@@ -48,6 +58,17 @@
   .additional-products__title {
     font-size: 32px;
     line-height: 32px;
+    text-align: center;
+    width: 378px;
+    margin-bottom: 81px;
+  }
+
+  .additional-products__title::before {
+    left: calc(100% + 4px);
+  }
+
+  .additional-products__title::after {
+    right: calc(100% + 1px);
   }
 }
 
@@ -56,12 +77,21 @@
     font-size: 40px;
     line-height: 40px;
   }
+
+  .additional-products__title::before {
+    left: calc(100% + 37px);
+  }
+
+  .additional-products__title::after {
+    right: calc(100% + 40px);
+  }
 }
 
 .additional-products__list {
   list-style: none;
   padding: 0;
-  padding-bottom: 20px;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 
@@ -83,13 +113,17 @@
   .additional-products__item {
     border-bottom: 1px solid #cdcdcd;
   }
+
+  .additional-products__list:first-child {
+    border-top: 1px solid #cdcdcd;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .additional-products__item {
     display: flex;
     flex-wrap: wrap;
-    padding: 27px 28px;
+    padding: 14px 40px;
     border: 1px solid #cdcdcd;
     border-bottom: none;
   }
@@ -120,6 +154,7 @@
   color: #222222;
   text-transform: uppercase;
   text-align: left;
+  margin: 12px 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -158,8 +193,9 @@
 
 @media (min-width: $desktop-width) {
   .additional-products__key {
-    width: 200px;
+    width: 220px;
     text-align: left;
+    padding-left: 26px;
   }
 }
 
@@ -181,38 +217,29 @@
 }
 
 .additional-products__item-button {
-  font-family: $Oswald;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: $bg-base-color;
   width: 100%;
-  padding: 10px 0;
-  border: none;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 @media (min-width: $desktop-width) {
   .additional-products__item-button {
-    width: 244px;
+    max-width: 244px;
     margin-left: auto;
+    margin-bottom: 0;
   }
 }
 
 .additional-products__select-all {
-  background-color: $bg-base-color;
-  background-image: url("../../../images/catalog/selectall-green-layout@1x.png"), url("../../../images/catalog/catalog-selectall@1x.png");
+  background: linear-gradient(0deg, rgba($color: $bg-base-color, $alpha: 0.85), rgba($color: $bg-base-color, $alpha: 0.85)), url("../../../images/catalog/catalog-selectall@1x.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 290px;
-  margin-top: 35px;
+  margin-bottom: 42px;
 }
 
 @media (min-width: $tablet-width) {
   .additional-products__select-all {
-    background-image: url("../../../images/catalog/selectall-green-layout-tablet@1x.png"), url("../../images/catalog/catalog-selectall-tablet@1x.png");
+    background: linear-gradient(0deg, rgba($color: $bg-base-color, $alpha: 0.85), rgba($color: $bg-base-color, $alpha: 0.85)), url("../../images/catalog/catalog-selectall-tablet@1x.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 200px;
@@ -224,9 +251,11 @@
   .additional-products__select-all {
     margin: 0;
     flex-basis: 245px;
-    background-image: url("../../../images/selectall-green-layout-desktop@1x.png"), url("../../../images/catalog-selectall-desktop@1x.png");
+    background: linear-gradient(0deg, rgba($color: $bg-base-color, $alpha: 0.85), rgba($color: $bg-base-color, $alpha: 0.85)), url("../../../images/catalog-selectall-desktop@1x.png");
     display: flex;
+    background-size: cover;
     justify-content: center;
+    background-repeat: no-repeat;
   }
 }
 
@@ -237,15 +266,15 @@
   background-image: url("../../icons/stack.svg#select-all-gift");
   background-repeat: no-repeat;
   position: absolute;
-  top: 48px;
+  top: 60px;
   left: 41px;
 }
 
 @media (min-width: $tablet-width) {
   .additional-products__select-all-title::before {
     display: flex;
-    top: 59px;
-    left: -300px;
+    top: 55px;
+    left: -344px;
   }
 }
 
