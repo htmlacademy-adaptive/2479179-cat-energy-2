@@ -10,7 +10,6 @@
   <link rel="icon" href="./favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./favicons/180.png">
   <link rel="manifest" href="./manifest.webmanifest">
-  <script src="./scripts/index.js" defer="defer"></script>
 </head>
 
 <body class="page-body">
@@ -26,7 +25,7 @@
 
     <nav class="page-nav page-nav--highlighted">
       <button class="page-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <ul class="page-nav__list">
+      <ul class="page-nav__list page-nav__list--opened">
         <li class="page-nav__item">
           <a class="page-nav__item-link page-nav__item-link--active" href="#">Главная</a>
         </li>
@@ -74,18 +73,18 @@
     <section class="program-instructions container container-mobile">
       <h2 class="program-instructions__title">Как это работает</h2>
       <ol class="program-instructions__list">
-        <li class="program-instructions__item">
+        <li class="program-instructions__item program-instructions__item--leaf">
           <p class="program-instructions__text">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>
-        <li class="program-instructions__item">
+        <li class="program-instructions__item program-instructions__item--water">
           <p class="program-instructions__text">Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.</p>
         </li>
-        <li class="program-instructions__item">
+        <li class="program-instructions__item program-instructions__item--cutlery">
           <p class="program-instructions__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
         </li>
-        <li class="program-instructions__item">
+        <li class="program-instructions__item program-instructions__item--cutlery">
           <p class="program-instructions__text">Уже через месяц наслаждайтесь изменениями к лучшемy вашего питомца!</p>
         </li>
       </ol>
@@ -98,10 +97,13 @@
         </p>
         <div class="program-results__wrapper container container-mobile">
           <ul class="program-results__list container container-mobile">
-            <li class="program-results__item">5 КГ<span class="program-results__text-wrapper">снижение веса</span></li>
-            <li class="program-results__item">60 ДНЕЙ<span class="program-results__text-wrapper">затрачено времени</span></li>
+            <li class="program-results__item"><span>5 КГ</span><span class="program-results__text-wrapper">снижение веса</span></li>
+            <li class="program-results__item"><span>60 ДНЕЙ</span><span class="program-results__text-wrapper">затрачено времени</span></li>
           </ul>
-          <div class="program-results__expenses container container-mobile">Затраты на питание: <span class="program-results__amount-wrapper">15 000 РУБ.</span></div>
+          <p class="program-results__expenses container container-mobile">
+            <span>Затраты на питание:</span>
+            <span class="program-results__amount-wrapper">15 000 РУБ.</span>
+          </p>
         </div>
       </div>
       <div class="program-results__slider container container-mobile">
@@ -152,7 +154,7 @@
           <a class="page-footer__social-link page-footer__social-link--vk" href="#"><span class="visually-hidden">ВКонтакте</span></a>
         </li>
         <li>
-          <a class="page-footer__social-link page-footer__social-link--youtube" href="#"><span class="visually-hidden">ЮТюб</span></a>
+          <a class="page-footer__social-link page-footer__social-link--youtube" href="#"><span class="visually-hidden">ЮТуб</span></a>
         </li>
         <li>
           <a class="page-footer__social-link page-footer__social-link--telegram" href="#"><span class="visually-hidden">Телеграм</span></a>
@@ -163,8 +165,8 @@
       </a>
     </div>
   </footer>
-  <script src="./scripts/slider.js"></script>
-
+  <script src="./scripts/index.js" defer="defer"></script>
+  <script src="./scripts/slider.js" defer="defer"></script>
 </body>
 
 </html>

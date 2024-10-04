@@ -1,7 +1,9 @@
 .page-header {
   position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 24px;
   padding-block: 14px;
 }
 
@@ -21,7 +23,6 @@
 .page-header__logo {
   display: flex;
   align-items: center;
-  margin-right: auto;
 }
 
 .page-header__logo:hover {
@@ -69,7 +70,7 @@
 
 @media (min-width: $desktop-width) {
   .page-nav--highlighted {
-    max-width: 50%;
+    max-width: 49%;
   }
 }
 
@@ -119,9 +120,8 @@
     position: initial;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
     align-items: center;
-    gap: 38px;
+    gap: 24px 38px;
     border: none;
   }
 }

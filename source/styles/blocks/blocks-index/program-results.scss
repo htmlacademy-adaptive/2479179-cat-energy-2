@@ -192,6 +192,23 @@
   margin-bottom: 20px;
 }
 
+.program-results__handler {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: #666666;
+}
+
+.program-results__handler:hover,
+.program-results__handler:focus,
+.program-results__handler:active {
+  color: #68b738;
+}
+
+.program-results__handler:active {
+  opacity: 0.6;
+}
+
 @media (min-width: $tablet-width) {
   .program-results__expenses {
     font-size: 20px;

@@ -89,22 +89,21 @@
   }
 }
 
-.program-instructions__item:nth-child(1)::before {
+.program-instructions__item--leaf::before {
   background-image: url("../../icons/stack.svg#instructions-leaf");
 }
 
-.program-instructions__item:nth-child(2)::before {
+.program-instructions__item--water::before {
   background-image: url("../../icons/stack.svg#instructions-water");
 }
 
-.program-instructions__item:nth-child(3)::before {
+.program-instructions__item--cutlery::before {
   background-image: url("../../icons/stack.svg#instructions-cutlery");
 }
 
-.program-instructions__item:last-child::before {
+.program-instructions__item--timer::before {
   background-image: url("../../icons/stack.svg#instructions-timer");
 }
-
 
 @media (min-width: $tablet-width) {
   .program-instructions__item {
