@@ -106,6 +106,7 @@
   color: #000000;
   text-transform: uppercase;
   text-align: left;
+  word-break: break-all;
 }
 
 @media (min-width: $tablet-width) {
@@ -176,6 +177,7 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: left;
   gap: 15px;
   padding-top: 17px;
 }
@@ -186,6 +188,7 @@
 
 .program-description__link::after {
   content: "";
+  display: block;
   width: 24px;
   height: 12px;
   background-color: #000000;
@@ -194,6 +197,7 @@
   mask-size: 24px 12px;
   mask-repeat: no-repeat;
   align-self: center;
+  flex-shrink: 0;
 }
 
 .program-description__link:hover::after,
