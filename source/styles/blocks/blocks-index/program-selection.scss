@@ -23,7 +23,7 @@
 
 @media (min-width: $tablet-width) {
   .program-selection {
-    margin-bottom: 525px;
+    margin-bottom: 527px;
     padding-top: 37px;
     color: #000000;
   }
@@ -36,7 +36,7 @@
 @media (min-width: $desktop-width) {
   .program-selection {
     position: static;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
     padding-top: 80px;
     padding-bottom: 184px;
   }
@@ -130,6 +130,7 @@
 
 .program-selection__button {
   width: 100%;
+  text-decoration: none;
 }
 
 @media (min-width: $tablet-width) {

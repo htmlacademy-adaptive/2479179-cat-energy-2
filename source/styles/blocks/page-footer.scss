@@ -21,6 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 24px;
   margin: 0;
   padding: 0;
@@ -138,6 +139,6 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    padding-bottom: 66px;
+    padding-block: 66px;
   }
 }

@@ -7,9 +7,31 @@
   padding-block: 14px;
 }
 
+.page-header--underline {
+  position: relative;
+}
+
+.page-header--underline::after {
+  content: "";
+  bottom: 0;
+  left: calc(50% - 50vw);
+  position: absolute;
+  width: 100vw;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     padding-block: 26px;
+  }
+
+  .page-header--underline {
+    position: static;
+  }
+
+  .page-header--underline::after {
+    content: unset;
   }
 }
 
