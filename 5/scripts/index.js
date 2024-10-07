@@ -1,0 +1,1 @@
+var e=document.querySelector(".page-nav__toggle"),o=document.querySelector(".page-nav__list");e.classList.remove("page-nav__toggle--opened");o.classList.remove("page-nav__list--opened");e.onclick=function(){e.classList.toggle("page-nav__toggle--opened"),o.classList.toggle("page-nav__list--opened")};
