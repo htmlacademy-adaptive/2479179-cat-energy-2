@@ -295,7 +295,7 @@
 
     connectedCallback() {
       this._childrenChange();
-      this._handle.innerHTML = `<div class="${scrubber}">${`<svg viewBox="0 0 27 20" fill="currentColor">${'<path d="M17 19.2l9.5-9.6L16.9 0zM9.6 0L0 9.6l9.6 9.6z"/>'}</svg>`}</div>`;
+      this._handle.innerHTML = `<span class="visually-hidden">Слайдер</span><div class="${scrubber}">${`<svg viewBox="0 0 27 20" fill="currentColor">${'<path d="M17 19.2l9.5-9.6L16.9 0zM9.6 0L0 9.6l9.6 9.6z"/>'}</svg>`}</div>`;
       if (!this._everConnected) {
         this._resetPosition();
         this._everConnected = true;

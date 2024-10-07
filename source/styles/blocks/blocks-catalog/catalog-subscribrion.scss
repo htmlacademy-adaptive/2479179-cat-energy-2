@@ -103,7 +103,7 @@
 .catalog-subscribrion__form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 18px;
   margin-bottom: 40px;
 }
 
@@ -121,7 +121,7 @@
 @media (min-width: $desktop-width) {
   .catalog-subscribrion__form {
     width: 752px;
-    margin-bottom: 100px;
+    margin-bottom: 105px;
   }
 }
 
